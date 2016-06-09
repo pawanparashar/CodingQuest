@@ -43,7 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Chap1.cs" />
     <Compile Include="Chap10.cs" />
     <Compile Include="Chap11.cs" />
     <Compile Include="Chap12.cs" />
@@ -54,15 +53,12 @@
     <Compile Include="Chap17.cs" />
     <Compile Include="Chap18.cs" />
     <Compile Include="Chap19.cs" />
-    <Compile Include="Chap2.cs" />
     <Compile Include="Chap20.cs" />
     <Compile Include="Chap21.cs" />
     <Compile Include="Chap22.cs" />
     <Compile Include="Chap23.cs" />
     <Compile Include="Chap24.cs" />
     <Compile Include="Chap25.cs" />
-    <Compile Include="Chap3.cs" />
-    <Compile Include="Chap4.cs" />
     <Compile Include="Chap5.cs" />
     <Compile Include="Chap6.cs" />
     <Compile Include="Chap7.cs" />
