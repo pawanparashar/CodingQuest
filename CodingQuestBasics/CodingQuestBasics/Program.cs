@@ -13,8 +13,8 @@ namespace CodingQuestBasics
         {
             Chap5 c5 = new Chap5();
 
-            var result = c5._5_3_reversebits(100);
-
+            var number = c5._5_10_RandomNub(1, 12);
+            
         }
 
 
