@@ -11,13 +11,9 @@ namespace CodingQuestBasics
     {
         static void Main(string[] args)
         {
-            GeneralQuest G = new GeneralQuest();
+            Chap5 c5 = new Chap5();
 
-            var product = G.Product(3, 4);
-
-            G.swap(4, 5);
-
-            var sum = G.Sum(7, 8);
+            var result = c5._5_3_reversebits(100);
 
         }
 
