@@ -11,9 +11,13 @@ namespace CodingQuestBasics
     {
         static void Main(string[] args)
         {
-            Chap5 c5 = new Chap5();
+            Chap7 c7 = new Chap7();
 
-            var number = c5._5_10_RandomNub(1, 12);
+            var result = c7._7_5_isPalindrom("Able was I,ere I saw Elba!");
+
+           
+
+           
             
         }
 

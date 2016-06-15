@@ -170,6 +170,10 @@ namespace CodingQuestBasics
             {
                 return x;
             }
+            else if(y==0)
+            {
+                return 1;
+            }
             else
             {
                 return x * _5_7_xpowery(x, y - 1);
