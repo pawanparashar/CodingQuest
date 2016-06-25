@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -49,5 +50,98 @@ namespace CodingQuestBasics
     // 25.40 Test if arbitrage is possible . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 456
     class Chap25
     {
+        //Compute the greatest common divisor
+        public int _25_1_ComputeGCD(int a,int b)
+        {
+            if(a<b)
+            {
+                return _25_1_ComputeGCD(b, a);
+            }
+            else
+            {
+                while(a%b!= 0)
+                {
+                    int temp = 0;
+                    temp = b;
+                    b = a % b;
+                    a = temp;
+                    
+                }
+                
+            }
+            return b;
+
+        }
+
+        public int _25_1_ComputeGCDRecursion(int a, int b)
+        {
+            if (a < b)
+            {
+                return _25_1_ComputeGCDRecursion(b, a);
+            }
+            else if(a%b==0)
+            {
+                return b;
+            }
+            else
+            {
+                return _25_1_ComputeGCDRecursion(b, a % b);
+            }
+
+        }
+
+        public int _25_1_CompateGCDDijkstra(int a,int b)
+        {
+            if(a==b)
+            {
+                return a;
+            }
+            else if(a>b)
+            {
+                return _25_1_CompateGCDDijkstra(a - b, b);
+            }
+            else
+            {
+                return _25_1_CompateGCDDijkstra(a, b-a);
+            }
+
+        }
+
+
+        //Compute first missing positive entry
+
+        public int _25_2_MissingPostiveEntry(int[] array)
+        {
+            Hashtable ht = new Hashtable();
+
+            foreach(int temp in array)
+            {
+                if(ht.ContainsKey(temp))
+                {
+
+                }
+                else
+                {
+                    ht.Add(temp, 0);
+                }
+
+            }
+            int i = 1;
+            int result = 0;
+            while(i>0)
+            {
+                if(!ht.ContainsKey(i))
+                {
+                    result = i;
+                    break;
+                }
+                i++;
+            }
+            return result;
+        }
+
+
+       
+
     }
 }

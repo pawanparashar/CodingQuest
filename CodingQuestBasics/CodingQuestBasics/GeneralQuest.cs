@@ -179,5 +179,33 @@ namespace CodingQuestBasics
         }
 
 
+        //Print pair where sum matches with result 
+
+        public Dictionary<int,int> PairPrintout(int[] numbers, int results)
+        {
+
+            Dictionary<int, int> tempDict = new Dictionary<int, int>();
+
+            Dictionary<int, int> result = new Dictionary<int, int>();
+
+            for(int i=0;i<numbers.Length;i++)
+            {
+                tempDict.Add(numbers[i], results - numbers[i]);
+
+            }
+
+            foreach(KeyValuePair<int,int> temp in tempDict)
+            {
+                if(tempDict.ContainsKey(temp.Value))
+                {
+                    result.Add(temp.Key,temp.Value);
+                }
+
+            }
+
+            return result;
+
+        }
+
     }
 }

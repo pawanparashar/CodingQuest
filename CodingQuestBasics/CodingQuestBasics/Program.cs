@@ -11,12 +11,9 @@ namespace CodingQuestBasics
     {
         static void Main(string[] args)
         {
-            GeneralQuest GQ = new GeneralQuest();
-            int[] a = {1,2,3,7 };
-            int[] b = { 4,5,8 };
-
-            var result = GQ.MergetwosortedArray(a, b);
-
+            Chap25 c25 = new Chap25();
+            int[] a = { 1,2,3,4,5,6,7,8,9,11,12,15,10};
+            var temp = c25.MissingPostiveEntry(a);
            
 
            

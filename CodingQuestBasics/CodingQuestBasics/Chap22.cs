@@ -23,5 +23,8 @@ namespace CodingQuestBasics
     // 22.14 Dynamic linkage . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 373
     class Chap22
     {
+
+        
+
     }
 }
