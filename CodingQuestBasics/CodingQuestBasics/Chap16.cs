@@ -20,5 +20,21 @@ namespace CodingQuestBasics
     // 16.11 Compute the diameter of a tree . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 270
     class Chap16
     {
+        
+    //The Towers of Hanoi problem
+    public void _16_1_TheTowersofHanoi(int numberofdisc,int start, int aux,int end)
+    {
+        if(numberofdisc>0)
+        {
+            TheTowersofHanoi(numberofdisc-1,start,end,aux);
+            Console.WriteLine("Move from " + start + " to " + end);
+            TheTowersofHanoi(numberofdisc-1,aux,start,end);
+        }
+        
+    }
+    
+    
+    
+        
     }
 }
