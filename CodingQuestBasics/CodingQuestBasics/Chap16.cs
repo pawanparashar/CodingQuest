@@ -33,6 +33,33 @@ namespace CodingQuestBasics
         
     }
     
+    public void _16_3_Generatepermutations(char[] list,int i,int m)
+    {
+        
+         if(i==m)
+        {
+             Console.WriteLine(list);
+        }
+        else
+        {
+        for(int j=i;j<=m;j++)
+        {
+            swap(ref list[j],ref list[i]);
+            Prem(list,i+1,m);
+            swap(ref list[j],ref list[i]);
+        }
+        }
+        
+    }
+    public void swap(ref char a,ref char b)
+    {
+       
+        char temp;
+        temp =b;
+        b=a;
+        a=temp;
+        
+    }
     
     
         
